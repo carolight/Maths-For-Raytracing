@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2C747C8C4F2C6895D8B6B0C42BCB854F8DB24CF8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2C747C8C4F2C6895D8B6B0C42BCB854F8DB24CF8" : 0,
+    "F7DB4D1484A21422F5ECF44CC215E55FF26FF6F7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7CF15D77-E784-4CF9-B093-6547A63180F8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2C747C8C4F2C6895D8B6B0C42BCB854F8DB24CF8" : "Maths-For-Raytracing\/",
+    "F7DB4D1484A21422F5ECF44CC215E55FF26FF6F7" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MathsForRaytracing",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MathsForRaytracing.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/carolight\/Maths-For-Raytracing.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2C747C8C4F2C6895D8B6B0C42BCB854F8DB24CF8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:carolight\/Maths-For-Raytracing.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F7DB4D1484A21422F5ECF44CC215E55FF26FF6F7"
+    }
+  ]
+}

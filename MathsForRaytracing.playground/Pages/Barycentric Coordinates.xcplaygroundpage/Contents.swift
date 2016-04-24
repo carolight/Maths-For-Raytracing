@@ -116,11 +116,30 @@ func -(left: CGPoint, right: CGPoint) -> CGPoint {
 }
 
 /*:
+ Alternative method using determinants and Cramer's Rule.
+ <[Explained here](http://web.archive.org/web/20090609111431/http://www.crackthecode.us/barycentric/barycentric_coordinates.html)>
+ */
+
+func barycentric2(p:CGPoint, a: CGPoint, b: CGPoint, c: CGPoint) -> float3 {
+  
+  let determinant = a.x * b.y - a.x * c.y - b.x * a.y + b.x * c.y + c.x * a.y - c.x * b.y
+  let d1 = p.x * b.y - p.x * c.y - b.x * p.y + b.x * c.y + c.x * p.y - c.x * b.y
+  let d2 = a.x * p.y - a.x * c.y - p.x * a.y + p.x * c.y + c.x * a.y - c.x * p.y
+  let d3 = a.x * b.y - a.x * p.y - b.x * a.y + b.x * p.y + p.x * a.y - p.x * b.y
+  
+  let u = Float(d1/determinant)
+  let v = Float(d2/determinant)
+  let w = Float(d3/determinant)
+  
+  return float3(u, v, w)
+}
+
+/*:
  Test the barycentric function with `pointP`.
  The result should be (1/3, 1/3, 1/3)
  */
 
-var result = barycentric(pointP, a: pointA, b: pointB, c: pointC)
+var result = barycentric2(pointP, a: pointA, b: pointB, c: pointC)
 result.x
 result.y
 result.z
@@ -129,7 +148,7 @@ result.z
  Now plug in `pointQ` to see if it is inside or outside the simplex
  */
 
-result = barycentric(pointQ, a: pointA, b: pointB, c: pointC)
+result = barycentric2(pointQ, a: pointA, b: pointB, c: pointC)
 result.x
 result.y
 result.z
